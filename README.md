@@ -10,6 +10,7 @@ Requirements
 2. Heroku account
 3. VS Code IDE
 4. GIT CLI
+5. [Git Documentation](https://git-scm.com/docs/gittutorial)
 
 ##
 Creating Conda Environment
@@ -69,6 +70,43 @@ To check remote url
 
 ```
 git remote -v
+```
+
+To setup CI/CD pipeline in heroku we need 3 information
+
+1. HEROKU_EMAIL = srivastavaprakhar07@gmail.com
+2. HEROKU_API_KEY = 
+3. HEROKU_APP_NAME = 
+
+Build Docker Image
+
+```
+docker build -t <image_name>:<tag_name> .
+```
+Note:  Image name in docker must be lowercase
+
+To list docker image
+
+```
+docker images
+```
+
+Run docker image
+
+```
+docker run -p 5000:5000 -e PORT=5000 f8c749e73678
+```
+
+To check running container in docker
+
+```
+docker ps
+```
+
+Tos stop docker conatiner
+
+```
+docker stop <container_id>
 ```
 
 
